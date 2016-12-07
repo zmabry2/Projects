@@ -1,0 +1,64 @@
+body{
+  background-color: rgb(255, 195, 113);
+  background-image: linear-gradient(to left, rgb(255, 95, 109), rgb(255, 195, 113));
+  font-size: 15px;
+}
+#palette li{
+  display: inline-block;
+  width: 8%;
+  height: 30px;
+  font-size: 100%
+}
+
+.palette .active {
+  border: 2px solid purple;
+}
+#cnvs {
+  position: relative;
+  width: 1240px;
+  height: 520px;
+  border: 5px solid black;
+  margin: 1% auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+canvas {
+  position: absolute;
+}
+
+#bcg-canvas {
+  z-index: 1;
+}
+
+#draw-canvas {
+  z-index: 2;
+}
+
+.col-md-3{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 200%;
+}
+
+#palette p{
+  display: inline;
+  margin-left: 20%;
+}
+.navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: -15%;
+  margin:0 auto;
+  color: black;
+  font-size: 180%;
+}
+
+.navbar{
+  background: rgba(255,255,255,0.9)
+}
+
+p>a{
+  color: white;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Design -- Illini Wildcards</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="css/design.css" media="screen" rel="stylesheet" title="no title"/>
+</head>
+<body style="padding-top:50px">
+<div class = "container-fluid">
+<!-- nav bars -->
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <p class = "navbar-brand col-md-3" style="font-size:186%;">Illini WildCards</p>
+      <ul class="nav nav-pills col-md-offset-7">
+        <li role="presentation"><a href="index.html">Home</a></li>
+        <li role="presentation" class="active"><a href="design.html">Draw</a></li>
+        <li role="presentation"><a href="voting.php">Vote</a></li>
+        <li role="presentation"><a href="pastWinners.html">Past Winners</a></li>
+     <!--   <li role="presentation"><a href="index.html#about_us">About Us</a></li>
+        <li role="presentation"><a href="index.html#contact_us">Contact Us</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+<div id="cnvs">
+	<canvas height="520" id="bcg-cnvs" width="1240"></canvas>
+	<canvas height="520" id="draw-cnvs" width="1240"></canvas>
+</div>
+
+<ul id="palette" class="palette col-md-9">
+	<li class="active" style="background:rgb(255,165,0)">
+		<p id="rgba(255,165,0,255)">0</p>/1860
+	</li>
+	<li style="background:rgb(255,255,0)">
+		<p id="rgba(255,255,0,255)">0</p>/900
+	</li>
+	<li style="background:rgb(0,0,0);color:white">
+		<p id="rgba(0,0,0,255)">0</p>/1020
+	</li>
+	<li style="background:rgb(165,42,42);color:white">
+		<p id="rgba(165,42,42,255)">0</p>/660
+	</li>
+	<li style="background:rgb(0,0,255);color:white">
+		<p id="rgba(0,0,255,255)">0</p>/1860
+	</li>
+	<li style="background:rgb(255,0,0)">
+		<p id="rgba(255,0,0,255)">0</p>/780
+	</li>
+	<li style="background:rgb(0,128,0)">
+		<p id="rgba(0,128,0,255)">0</p>/1050
+	</li>
+	<li style="background:rgb(255,255,255)">
+		<p id="rgba(255,255,255,255)">0</p>/1830
+	</li>
+  <li style="display:none" id="rgba(0,0,0,0)"></li>
+</ul>
+
+<!-- <ul  id="count" class="count">
+	<li style="display:none"> <p id="rgba(0,0,0,0)" ></p></li>
+	<li> <p id="rgba(255,165,0,255)">0</p>/1860</li>
+	<li> <p id="rgba(255,255,0,255)">0</p>/900</li>
+	<li style="color:white"> <p id="rgba(0,0,0,255)">0</p>/1020</li>
+	<li style="color:white"> <p id="rgba(165,42,42,255)">0</p>/660</li>
+	<li style="color:white"> <p id="rgba(0,0,255,255)">0</p>/1860</li>
+	<li> <p id="rgba(255,0,0,255)">0</p>/780</li>
+	<li> <p id="rgba(0,128,0,255)">0</p>/1050</li>
+	<li> <p id="rgba(255,255,255,255)">0</p>/1830</li>
+</ul> -->
+
+<!-- <ul id="amount" class="count">
+	<li id="rgba(0,0,0,0)" style="display:none"></li>
+	<li id="Orange">1860</li>
+	<li id="Yellow">900</li>
+	<li id="Black">1020</li>
+	<li id="Brown">660</li>
+	<li id="Blue">1860</li>
+	<li id="Red">780</li>
+	<li id="Green">1050</li>
+	<li id="White">1830</li>
+</ul> -->
+<div class="btn-group col-md-3">
+  <button type="button" class="btn btn-default" id="save">Submit</button>
+  <button type="button" class="btn btn-default" id="fill">Fill</button>
+  <button type="button" class="btn btn-default" id="clear">Clear</button>
+	<button type="button" class="btn btn-default" id="undo">Undo</button>
+</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="javascript/bcg.js" charset="utf-8"></script>
+	<script src="javascript/draw.js" charset="utf-8"></script>
+</div>
+</body>
+</html>

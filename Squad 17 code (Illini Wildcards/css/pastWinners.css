@@ -1,0 +1,29 @@
+body {
+    opacity: 1;
+    background-color: rgb(255, 195, 113);
+    background-image: linear-gradient(to left, rgb(255, 95, 109), rgb(255, 195, 113));
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+}
+
+
+.navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: -15%;
+  margin:0 auto;
+  color: black;
+  font-size: 186%;
+}
+
+.thumbnail{
+  display: inline-block;
+  margin: 5% 5%;
+}
+
+.navbar{
+  background: white;
+  opacity: 0.9;
+}

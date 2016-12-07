@@ -1,0 +1,68 @@
+body {
+    opacity: 1;
+    background-color: rgb(255, 195, 113);
+    background-image: linear-gradient(to left, rgb(255, 95, 109), rgb(255, 195, 113));
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 180%;
+}
+.navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: -15%;
+  margin:0 auto;
+  color: black;
+  font-size: 187%;
+}
+.col-md-3{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 187%;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(55, 123, 181);
+    font-size: 250%;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 1% 0;
+    font-size: 100%;
+}
+.row span{
+  color: white;
+  font-size: 250%;
+}
+
+.something{
+  margin:25% auto;
+}
+
+.navbar{
+  background: rgba(255,255,255,0.9)
+}
+
+.carousel-inner>.item>img{
+  height: 520px;
+  width: 1240px;
+  max-width: none;
+}
+
+.text>h1{
+  color: rgb(55, 123, 181);
+}
+
+p>a{
+  color: white;
+}
